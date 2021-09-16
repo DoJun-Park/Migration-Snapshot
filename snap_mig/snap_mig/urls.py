@@ -21,8 +21,6 @@ import snap_mig_service.views
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
-    path('', snap_mig_service.views.auth),
-    path('auth', snap_mig_service.views.auth, name='auth'),
     path('showsnapshots', snap_mig_service.views.snap_view, name='snapview'),
     path('showinstances', snap_mig_service.views.ins_view, name='insview'),
     path('createsnapshots', snap_mig_service.views.create_snapshot, name='createsnapshot'),
